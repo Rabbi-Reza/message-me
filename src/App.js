@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Button, FormControl, InputLabel, Input } from '@material-ui/core';
-import Message from './Message';
+import { FormControl, IconButton, Input } from '@material-ui/core';
+import ChatIcon from '@material-ui/icons/Chat';
+import firebase from 'firebase';
+import React, { useEffect, useState } from 'react';
+import FlipMove from 'react-flip-move';
 import './App.css';
 import db from './firebase';
-import firebase from 'firebase';
-import FlipMove from 'react-flip-move';
-import ChatIcon from '@material-ui/icons/Chat';
-import { IconButton } from '@material-ui/core';
+import Message from './Message';
 
 function App() {
   const [input, setInput] = useState('');
@@ -48,7 +47,7 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome</h1>
-      <img height="200px" src="https://lh3.googleusercontent.com/proxy/JexBVfDG_WkBLTR3GmSnJQERfoICV2N57W0Xs7lTOeJFb5vcOCZ8BafiTpEGqvWJXtWN3Rwz0ez7xD4rIJl_LZIaBeOccNabuLAoPcqU_2i3LuiUbnhAK4iP827aYj9txDiXM9KdZqMSKg8" alt="main_icon"/>
+      <img height="200px" src="https://firebasestorage.googleapis.com/v0/b/message-me-60d56.appspot.com/o/message1.png?alt=media&token=511faa9e-d146-4de7-992c-8bb6fbc4920c" alt="main_icon"/>
       {/* <img height="200px" src="https://i.pinimg.com/originals/47/74/fd/4774fd9d0de2aa43fe15e6b24876978c.png" alt="main_icon"/> */}
       
       <h2>Hello, {username}</h2>
